@@ -1,0 +1,774 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+		<title>Learn JAVA</title>
+		<link rel='stylesheet' href='css/bootstrap.min.css' type='text/css' media='all'>		
+		<script src="js/bootstrap.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<style CSS>
+			body {
+				padding-top:50px;
+			}
+
+			#masthead { 
+				min-height:250px;
+			}
+
+			#masthead h1 {
+				font-size: 30px;
+				line-height: 1;
+				padding-top:20px;
+			}
+
+			#masthead .well {
+				margin-top:8%;
+			}
+
+			@media screen and (min-width: 768px) {
+				#masthead h1 {
+					font-size: 50px;
+				}
+			}
+
+			.navbar-bright {
+				background-color:#111155;
+				color:#fff;
+			}
+
+			.affix-top,.affix{
+				position: static;
+			}
+
+			@media (min-width: 979px) {
+				#sidebar.affix-top {
+					position: static;
+					margin-top:30px;
+					width:228px;
+				}
+  
+				#sidebar.affix {
+					position: fixed;
+					top:70px;
+					width:228px;
+				}
+			}
+
+			#sidebar li.active {
+				border:0 #eee solid;
+				border-right-width:5px;
+			}
+			
+			.myulbit {
+				list-style-type: none;
+			}
+			
+			textarea {
+				resize: none;
+			}
+			
+			.answersName {
+				border-style: hidden;
+			}
+		</style>
+				
+	</head>
+	<body>	
+		<nav class="navbar navbar-inverse navbar-default navbar-fixed-top" role="banner">
+		<div class="container">
+			<div class="navbar-header">
+				<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a href="#" class="navbar-brand">Java Learn</a>
+			</div>
+			<nav class="collapse navbar-collapse" role="navigation">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="index.html">Теория</a>
+					</li>
+					<li>
+						<a href="test.html">Тест</a>
+					</li>					
+				</ul>
+			</nav>
+		</div>
+		</nav>
+
+		<div id="masthead">  
+		<div class="container">
+			<div class="row">
+				<div class="col-md-7">
+					<h1>Основы программирования на Java
+						<p class="lead">  </p>
+					</h1>
+				</div>
+				<div class="col-md-5">
+					<div class="well well-lg"> 
+					<div class="row">						
+						<div class="col-sm-12">
+							<center>Раздел тестирования</center>
+						</div>
+					</div>
+					</div>
+				</div>
+			</div> 
+		</div><!--/container-->
+		</div><!--/masthead-->
+
+		<!--main-->
+		<div class="container">
+			<div class="row">
+			<!--left-->
+				<div class="col-md-3" id="leftCol">
+					<ul class="nav nav-stacked" id="sidebar">						
+						<li><a href="#sec1">Наверх</a></li>
+						
+					</ul>
+				</div><!--/left-->
+      
+			<!--right-->				
+				<div class="col-md-9">	
+					<SCRIPT language=JavaScript>
+					<!-- Begin test
+					var res="4224431433"					
+					function check_me() {
+					<!--Right answers
+						var count=0
+						with(document.test) {
+							if (!q1[0].checked&&!q1[1].checked&&!q1[2].checked&&!q1[3].checked) 
+							{count+=1};
+							if (!q2[0].checked&&!q2[1].checked&&!q2[2].checked&&!q2[3].checked) 
+							{count+=1};
+							if (!q3[0].checked&&!q3[1].checked&&!q3[2].checked&&!q3[3].checked) 
+							{count+=1};
+							if (!q4[0].checked&&!q4[1].checked&&!q4[2].checked&&!q4[3].checked) 
+							{count+=1};
+							if (!q5[0].checked&&!q5[1].checked&&!q5[2].checked&&!q5[3].checked) 
+							{count+=1};
+							if (!q6[0].checked&&!q6[1].checked&&!q6[2].checked&&!q6[3].checked)
+							{count+=1};
+							if (!q7[0].checked&&!q7[1].checked&&!q7[2].checked&&!q7[3].checked)
+							{count+=1};
+							if (!q8[0].checked&&!q8[1].checked&&!q8[2].checked&&!q8[3].checked)
+							{count+=1};
+							if (!q9[0].checked&&!q9[1].checked&&!q9[2].checked&&!q9[3].checked)
+							{count+=1};
+							if (!q10[0].checked&&!q10[1].checked&&!q10[2].checked&&!q10[3].checked)
+							{count+=1};
+					<!--							
+							if (count>0) <!-- Check all answers -->
+							{alert("Вы выполнили не все задания. Проверьте себя.")} 
+							else answer()
+						}
+					}
+					
+					function control(k,f1,f2,f3,f4,f5,f6,f7,f8,f9,f10) {
+					<!-- 
+						if (k==1&&f1.checked) return true;
+						if (k==2&&f2.checked) return true;
+						if (k==3&&f3.checked) return true;
+						if (k==4&&f4.checked) return true;
+						if (k==5&&f5.checked) return true;
+						if (k==6&&f6.checked) return true;
+						if (k==7&&f7.checked) return true;
+						if (k==8&&f8.checked) return true;
+						if (k==9&&f9.checked) return true;
+						if (k==10&&f10.checked) return true;
+					<!--	
+						return false;
+					}
+					
+					function answer() {
+						answ="";
+						with(document) {
+							answ+=control(res.charAt(0),test.q1[0],test.q1[1],test.q1[2],test.q1[3])?"1":"0"
+							answ+=control(res.charAt(1),test.q2[0],test.q2[1],test.q2[2],test.q2[3])?"1":"0"
+							answ+=control(res.charAt(2),test.q3[0],test.q3[1],test.q3[2],test.q3[3])?"1":"0"
+							answ+=control(res.charAt(3),test.q4[0],test.q4[1],test.q4[2],test.q4[3])?"1":"0"
+							answ+=control(res.charAt(4),test.q5[0],test.q5[1],test.q5[2],test.q5[3])?"1":"0"
+							answ+=control(res.charAt(5),test.q6[0],test.q6[1],test.q6[2],test.q6[3])?"1":"0"
+							answ+=control(res.charAt(6),test.q7[0],test.q7[1],test.q7[2],test.q7[3])?"1":"0"
+							answ+=control(res.charAt(7),test.q8[0],test.q8[1],test.q8[2],test.q8[3])?"1":"0"
+							answ+=control(res.charAt(8),test.q9[0],test.q9[1],test.q9[2],test.q9[3])?"1":"0"
+							answ+=control(res.charAt(9),test.q10[0],test.q10[1],test.q10[2],test.q10[3])?"1":"0"							
+							<!--Analysis of results -->	
+							showResult();
+						}
+					}
+					
+					function showResult() {
+						var nok=0;
+						var i,s;
+						for (i=0;i<answ.length;i++) {nok+=answ.charAt(i)=="1"?1:0;}
+						if(nok<4) s='"НЕУДОВЛЕТВОРИТЕЛЬНО"';
+						if(nok==4) s='"УДОВЛЕТВОРИТЕЛЬНО"';
+						if(nok>4 && nok<6) s='"УДОВЛЕТВОРИТЕЛЬНО"';
+						if(nok==7) s='"ХОРОШО"';
+						if(nok>7 && nok<9) s='"ХОРОШО"';
+						if(nok==10) s='"ОТЛИЧНО"';
+						document.test.s1.value="Количество правильных ответов "+nok+". Ваша оценка "+s+". Загляните в окно рядом с номером задания. Если ответ правильный, появится знак (+). Если Вы ошиблись, отобразиться (-).";
+						with(document.test)	{
+							if (answ.charAt(0)=="1") {t1.value=" +"} else {t1.value=" -"};
+							if (answ.charAt(1)=="1") {t2.value=" +"} else {t2.value=" -"};
+							if (answ.charAt(2)=="1") {t3.value=" +"} else {t3.value=" -"};
+							if (answ.charAt(3)=="1") {t4.value=" +"} else {t4.value=" -"};
+							if (answ.charAt(4)=="1") {t5.value=" +"} else {t5.value=" -"};
+							if (answ.charAt(5)=="1") {t6.value=" +"} else {t6.value=" -"};
+							if (answ.charAt(6)=="1") {t7.value=" +"} else {t7.value=" -"};
+							if (answ.charAt(7)=="1") {t8.value=" +"} else {t8.value=" -"};
+							if (answ.charAt(8)=="1") {t9.value=" +"} else {t9.value=" -"};
+							if (answ.charAt(9)=="1") {t10.value=" +"} else {t10.value=" -"};
+							if (t1.value==" +") {t1.style.color="green"} else {t1.style.color="red"};
+							if (t2.value==" +") {t2.style.color="green"} else {t2.style.color="red"};
+							if (t3.value==" +") {t3.style.color="green"} else {t3.style.color="red"};
+							if (t4.value==" +") {t4.style.color="green"} else {t4.style.color="red"};
+							if (t5.value==" +") {t5.style.color="green"} else {t5.style.color="red"};
+							if (t6.value==" +") {t6.style.color="green"} else {t6.style.color="red"};
+							if (t7.value==" +") {t7.style.color="green"} else {t7.style.color="red"};
+							if (t8.value==" +") {t8.style.color="green"} else {t8.style.color="red"};
+							if (t9.value==" +") {t9.style.color="green"} else {t9.style.color="red"};
+							if (t10.value==" +") {t10.style.color="green"} else {t10.style.color="red"};
+							
+						}
+					}
+					</SCRIPT>
+					
+					<form name=test>
+					<p><h2 id="sec1">Тест</h2></span></p>
+					<br><br><br>
+					<ul class="myulbit">					
+					<!-- <ol> -->
+					<li>
+					<h4>
+						<!-- Question 1 -->
+						<input class="answersName" size=4 name=t1 value="Вопрос 1" readonly><br><br>
+						<p> Имеется следующий код:</p>
+					</h4>						
+						<div class="row">
+							<div class="col-md-9">
+								<div class="panel panel-default">														
+									<ol class="list-group">  
+										<li class="list-group-item">
+											public class Overload {
+											<ul>
+												<li class="list-group-item">
+													public void method(Object o) {
+												<ul>
+													<li class="list-group-item">
+														System.out.println("Object");
+													</li>
+												</ul>
+												}
+												</li>
+												<li class="list-group-item">
+													public void method(java.io.FileNotFoundException f) {
+												<ul>	
+													<li class="list-group-item">
+														System.out.println("FileNotFoundException");
+													</li>
+												</ul>
+												}
+												</li>
+												<li class="list-group-item">
+													public void method(java.io.IOException i) {
+												<ul>
+													<li class="list-group-item">
+														System.out.println("IOException");
+													</li>
+												</ul>	
+												}
+												</li>
+												<li class="list-group-item">
+													public static void main(String args[]) {
+												<ul>
+													<li class="list-group-item">
+														Overload test = new Overload();<br>
+														test.method(null);
+													</li>
+												</ul>	
+												}
+												</li>
+											</ul>
+											}										
+										</li>
+									</ol>								
+								</div>
+							</div>					 
+						</div>
+						<p>Результатом его компиляции и выполнения будет:</p>											
+					<div class="row">	
+						<div class="col-sm-12	">
+							<label class="radio-inline"><input type=radio name=q1>Ошибка компиляции</label><br>
+							<label class="radio-inline"><input type=radio name=q1>Ошибка времени выполнения</label>	<br>					
+							<label class="radio-inline"><input type=radio name=q1>«Object»</label><br>
+							<label class="radio-inline"><input type=radio name=q1>«FileNotFoundException»</label>
+						</div>
+					</div>	
+					<br><br>
+					
+					
+					<li>
+					<!-- Question 2 -->	
+					<h4><input class="answersName" size=4 name=t2 value="Вопрос 2" readonly></h4>						
+						<div class="row">
+							<div class="col-md-9">
+								<div class="panel panel-default">				
+								<div class="panel-body text-justify">							
+									Float f1 = new Float(Float.NaN);<br><br>
+									Float f2 = new Float(Float.NaN);<br><br>
+									System.out.println( ""+ (f1 == f2)+" "+f1.equals(f2)+ " "+(Float.NaN == Float.NaN) );							
+								</div>
+								</div>
+							</div>					 
+						</div>						
+						<p>Что будет выведено в результате выполнения данного куска кода:</p>
+					<div class="row">
+						<div class="col-sm-12">
+							<label class="radio-inline"><input type=radio name=q2>false false false</label>
+							<label class="radio-inline"><input type=radio name=q2>false true false</label> 						
+							<label class="radio-inline"><input type=radio name=q2>true true false</label> 
+							<label class="radio-inline"><input type=radio name=q2>false true true</label> 
+						</div>
+					</div>
+					<br><br>
+					
+					
+					<li>
+					<!-- Question 3 -->
+					<br><br>
+					<h4><input class="answersName" size=4 name=t3 value="Вопрос 3" readonly></h4>
+					<div class="row">
+							<div class="col-md-9">
+								<div class="panel panel-default">														
+									<ol class="list-group">  
+										<li class="list-group-item">
+											class Mountain {
+											<ul>
+												<li class="list-group-item">
+													static String name = "Himalaya";<br>
+													static Mountain getMountain() {
+												<ul>
+													<li class="list-group-item">
+														System.out.println("Getting Name ");<br>
+														return null;
+													</li>
+												</ul>
+												}
+												</li>
+												<li class="list-group-item">
+													 public static void main(String[ ] args) {
+												<ul>	
+													<li class="list-group-item">
+														System.out.println( getMountain().name );
+													</li>
+												</ul>
+												}
+												</li>																						
+											</ul>
+											}										
+										</li>
+									</ol>								
+								</div>
+							</div>					 
+					</div>
+					<p>Что произойдет при попытке выполнения данного кода:	</p>
+					<div class="row">
+						<div class="col-sm-12">
+							<label class="radio-inline"><input type=radio name=q3>Будет выведено «Himalaya» но НЕ будет выведено «Getting Name»</label><br>
+							<label class="radio-inline"><input type=radio name=q3>Будет выведено «Getting Name» и «Himalaya»</label> <br>
+							<label class="radio-inline"><input type=radio name=q3>Ничего не будет выведено</label> <br>
+							<label class="radio-inline"><input type=radio name=q3>Будет выброшен NullPointerException</label> 
+						</div>
+					</div>
+					<br><br>
+					
+					
+					<li>
+					<!-- Question 4 -->
+					<h4><input class="answersName" size=4 name=t4 value="Вопрос 4" readonly></h4>
+					<div class="row">
+							<div class="col-md-9">
+								<div class="panel panel-default">				
+								<div class="panel-body text-justify">							
+									Integer a = 120;<br>
+									Integer b = 120;<br>
+									Integer c = 130;<br>
+									Integer d = 130;<br>
+									System.out.println(a==b);<br>
+									System.out.println(c==d);							
+								</div>
+								</div>
+							</div>					 
+					</div>
+					<p>В результате выполнения данного кода будет выведено:</p>
+					<div class="row">
+						<div class="col-sm-12">
+							<label class="radio-inline"><input type=radio name=q4>true true </label> 
+							<label class="radio-inline"><input type=radio name=q4>false false </label> 
+							<label class="radio-inline"><input type=radio name=q4>false true </label> 
+							<label class="radio-inline"><input type=radio name=q4>true false </label> 
+						</div>
+					</div>
+					<br><br>
+					
+					
+					<li>
+					<!-- Question 5 -->
+					<h4><input class="answersName" size=4 name=t5 value="Вопрос 5" readonly></h4>
+					<div class="row">
+							<div class="col-md-9">
+								<div class="panel panel-default">					
+									<ol class="list-group">  
+										<li class="list-group-item">
+											//In File Other.java<br>
+											package other;<br>
+											public class Other { public static String hello = "Hello"; }<br><br><br>
+											
+											
+											//In File Test.java<br>
+											package testPackage;<br>
+											import other.*;<br>
+											class Test {
+											<ul>
+												<li class="list-group-item">
+													 public static void main(String[] args) {<br>													
+												<ul>
+													<li class="list-group-item">
+														 String hello = "Hello", lo = "lo";<br>
+														 System.out.print((testPackage.Other.hello == hello) + " ");<br>
+														 System.out.print((other.Other.hello == hello) + " ");<br>
+														 System.out.print((hello == ("Hel"+"lo")) + " ");<br>
+														 System.out.print((hello == ("Hel"+lo)) + " ");<br>
+														 System.out.println(hello == ("Hel"+lo).intern());
+													</li>
+												</ul>
+												}																																	
+											</ul>											
+											}<br>
+											class Other { static String hello = "Hello"; }
+										</li>
+									</ol>								
+								</div>
+							</div>					 
+					</div>
+					<p>В результате мы получим:</p>
+					<div class="row">
+						<div class="col-sm-12">
+							<label class="radio-inline"><input type=radio name=q5>false true true false true </label> 
+							<label class="radio-inline"><input type=radio name=q5>false false true false true</label><br> 
+							<label class="radio-inline"><input type=radio name=q5>true true true true true</label> 
+							<label class="radio-inline"><input type=radio name=q5>true true true false true</label> 
+						</div>
+					</div>
+					<br><br>
+					
+					
+					<li>
+					<!-- Question 6 -->
+					<h4><input class="answersName" size=4 name=t6 value="Вопрос 6" readonly><br><br>
+						<p>Дана сигнатура метода:</p> 
+					</h4>
+					<div class="row">
+							<div class="col-md-9">
+								<div class="panel panel-default">				
+								<div class="panel-body text-justify">							
+									public static <E extends CharSequence> List < ? super E> doIt(List<E> nums) <br><br>
+									<p>Который вызывается как-то так:</p>
+									result = doIt(in);							
+								</div>
+								</div>
+							</div>					 
+					</div>
+					<p>Какого типа должны быть result и in?</p>
+					<div class="row">
+						<div class="col-sm-12">
+							<label class="radio-inline"><input type=radio name=q6>ArrayList «String» in; List «CharSequence» result;</label><br>
+							<label class="radio-inline"><input type=radio name=q6>List «String» in; List «Object» result;</label> <br>
+							<label class="radio-inline"><input type=radio name=q6>ArrayList «String» in; List result;</label> <br>
+							<label class="radio-inline"><input type=radio name=q6>List «CharSequence» in; List «CharSequence» result</label> <br>
+						</div>
+					</div>
+					<br><br>
+					
+					
+					<li>
+					<!-- Question 7 -->
+					<h4><input class="answersName" size=4 name=t7 value="Вопрос 7" readonly></h4>
+					<div class="row">
+							<div class="col-md-9">
+								<div class="panel panel-default">														
+									<ol class="list-group">  
+										<li class="list-group-item">
+											public static void doIt(String String) { //1
+											<ul>
+												<li class="list-group-item">
+													int i = 10;<br>
+													i : for (int k = 0 ; k < 10; k++) {
+												<ul>
+													<li class="list-group-item">
+														System.out.println( String + i); //3<br>
+														 if( k*k > 10) continue i; 
+													</li>
+												</ul>
+												}
+												</li>																																		
+											</ul>
+											}										
+										</li>
+									</ol>								
+								</div>
+							</div>					 
+					</div>
+					<p>Данный код:</p>
+					<div class="row">
+						<div class="col-sm-12">
+							<label class="radio-inline"><input type=radio name=q7>Скомпилируется и запустится без проблем</label> <br>
+							<label class="radio-inline"><input type=radio name=q7>Не скомпилируется из-за строки 1 </label> <br>
+							<label class="radio-inline"><input type=radio name=q7>Не скомпилируется из-за строки 2</label> <br>
+							<label class="radio-inline"><input type=radio name=q7>Не скомпилируется из-за строки 3</label> 
+						</div>
+					</div>
+					<br><br>
+					
+					
+					<li>
+					<!-- Question 8 -->
+					<h4><input class="answersName" size=4 name=t8 value="Вопрос 8" readonly></h4>
+					<div class="row">
+							<div class="col-md-9">
+								<div class="panel panel-default">														
+									<ol class="list-group">  
+										<li class="list-group-item">
+											public class Main {
+											<ul>
+												<li class="list-group-item">
+													 static void method(int... a) {													
+												<ul>
+													<li class="list-group-item">
+														 System.out.println("inside int...");
+													</li>
+												</ul>
+												}
+												</li>
+												<li class="list-group-item">
+													 static void method(long a, long b) {
+												<ul>	
+													<li class="list-group-item">
+														System.out.println("inside long");
+													</li>
+												</ul>
+												}
+												</li>	
+												<li class="list-group-item">
+													  static void method(Integer a, Integer b) {
+												<ul>	
+													<li class="list-group-item">
+														System.out.println("inside INTEGER");
+													</li>
+												</ul>
+												}
+												</li>
+												<li class="list-group-item">
+													   public static void main(String[] args) {
+												<ul>	
+													<li class="list-group-item">
+														int a = 2;<br>
+														int b = 3;<br>
+														method(a,b);
+													</li>
+												</ul>
+												}
+												</li>
+											</ul>
+											}										
+										</li>
+									</ol>								
+								</div>
+							</div>					 
+					</div>
+					<p>В результате мы получим:</p>
+					<div class="row">
+						<div class="col-sm-12">
+							<label class="radio-inline"><input type=radio name=q8>Ошибку компиляции</label> 
+							<label class="radio-inline"><input type=radio name=q8>Ошибку времени выполнения</label> 
+							<label class="radio-inline"><input type=radio name=q8>«inside int...»</label> 
+							<label class="radio-inline"><input type=radio name=q8>«inside long»</label> 
+						</div>
+					</div>
+					<br><br>
+					
+					
+					<li>
+					<!-- Question 9 -->
+					<h4><input class="answersName" size=4 name=t9 value="Вопрос 9" readonly></h4>
+					<div class="row">
+							<div class="col-md-9">
+								<div class="panel panel-default">														
+									<ol class="list-group">  
+										<li class="list-group-item">
+											class Super { static String ID = "QBANK"; }<br>
+											class Sub extends Super {
+											<ul>
+												<li class="list-group-item">
+													static { System.out.print("In Sub"); }												
+												</li>												
+											</ul>
+											}<br>
+											class Test{
+											<ul>
+												<li class="list-group-item">
+													public static void main(String[] args) {												
+												<ul>	
+													<li class="list-group-item">
+														System.out.println(Sub.ID);
+													</li>
+												</ul>
+												}
+												</li>												
+											</ul>
+											}											
+										</li>
+									</ol>								
+								</div>
+							</div>					 
+					</div>
+					<p>В результате выполнения данного кода:</p>
+					<div class="row">
+						<div class="col-sm-12">
+							<label class="radio-inline"><input type=radio name=q9>Он даже не скомпилируется</label> 
+							<label class="radio-inline"><input type=radio name=q9>Результат зависит от реализации JVM</label> <br>
+							<label class="radio-inline"><input type=radio name=q9>Будет выведено «QBANK»</label> 
+							<label class="radio-inline"><input type=radio name=q9>Будет выведено «In Sub» и «QBANK»</label> 
+						</div>
+					</div>
+					<br><br>
+					
+						
+					<li>
+					<!-- Question 10 -->
+					<h4><input class="answersName" size=5 name=t10 value="Вопрос 10" readonly><br><br>
+					<p>Имеется два класса:</p>
+					</h4>
+					<div class="row">
+							<div class="col-md-9">
+								<div class="panel panel-default">														
+									<ol class="list-group">  
+										<li class="list-group-item">
+											//in file A.java<br>
+											package p1;<br>
+											public class A {
+											<ul>
+												<li class="list-group-item">
+													protected int i = 10;<br>
+													public int getI() { return i; }											
+												</li>												
+											</ul>
+											}<br><br>
+											//in file B.java<br>
+											package p2;<br>
+											import p1.*;<br>
+											public class B extends A {
+											<ul>
+												<li class="list-group-item">
+													public void process(A a) {												
+												<ul>	
+													<li class="list-group-item">
+														a.i = a.i*2;
+													</li>
+												</ul>
+												}<br>
+												public static void main(String[] args) {
+												<ul>	
+													<li class="list-group-item">
+														A a = new B();<br>
+														B b = new B();<br>
+														b.process(a);<br>
+														System.out.println( a.getI() );
+													</li>
+												</ul>
+												}
+												</li>												
+											</ul>
+											}											
+										</li>
+									</ol>								
+								</div>
+							</div>					 
+					</div>
+					<p>В результате выполнения класса В мы получим:</p>
+					<div class="row">
+						<div class="col-sm-12">
+							<label class="radio-inline"><input type=radio name=q10>Будет выведено «20»</label> 
+							<label class="radio-inline"><input type=radio name=q10>Будет выведено «10»</label> <br>
+							<label class="radio-inline"><input type=radio name=q10>Код не скомпилирутся</label> 
+							<label class="radio-inline"><input type=radio name=q10>Возникнет ошибка времени выполнения</label> 
+						</div>
+					</div>
+					
+					</ul>
+					<!-- </ol> -->
+					<br>					
+					<div class="row">
+					<p>
+						<div class="col-sm-1">
+						</div>
+						<div class="col-sm-8">
+							<textarea class="form-control" name=s1 rows=4 cols=70> </textarea> <br>							
+						</div>
+					</p>
+					</div>
+					<div class="row">
+						<div class="col-sm-2">							
+						</div>
+						<div class="col-sm-10">	
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input class="btn-default" onclick=check_me() type=button value="Показать результат">
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<input class="btn-default"  type=reset value="Сбросить ответы">
+						</div>							
+					</div>
+					<br><br>
+					</form>
+							
+				</div><!--/right-->
+			</div><!--/row-->
+		</div><!--/container-->
+	</body>
+	<script>
+			/* activate sidebar */
+			$('#sidebar').affix({
+				offset: {
+					top: 235
+				}
+			});
+
+			/* activate scrollspy menu */
+			var $body   = $(document.body);
+			var navHeight = $('.navbar').outerHeight(true) + 10;
+
+			$body.scrollspy({
+				target: '#leftCol',
+				offset: navHeight				
+			});
+
+			/* smooth scrolling sections */
+			$('a[href*=#]:not([href=#])').click(function() {
+				if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+					var target = $(this.hash);
+					target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+					if (target.length) {
+						$('html,body').animate({
+							scrollTop: target.offset().top - 50
+						}, 1000);
+					return false;
+					}
+				}
+			});					
+	</script>
+</html>
+
